@@ -1,0 +1,68 @@
+---
+const pathname = Astro.url.pathname;
+---
+
+<header>
+	<nav>
+		<a class="logo" href="/">BONG</a>
+
+		<div class="menu">
+			<a class:list={[{ active: pathname === '/' }]} href="/">HOME</a>
+			<a class:list={[{ active: pathname.startsWith('/blog') }]} href="/blog">ARTICLES</a>
+			<a class:list={[{ active: pathname === '/about' }]} href="/about">ABOUT</a>
+		</div>
+	</nav>
+</header>
+
+<style>
+	header {
+		background: white;
+		border-bottom: 1px solid #e5e5e5;
+	}
+
+	nav {
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 22px 24px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.logo {
+		font-size: 1.8rem;
+		font-weight: 800;
+		text-decoration: none;
+		color: #111;
+	}
+
+	.menu {
+		display: flex;
+		gap: 28px;
+	}
+
+	.menu a {
+		text-decoration: none;
+		color: #333;
+		font-size: 1rem;
+	}
+
+	.menu a.active {
+		font-weight: 700;
+		color: #111;
+	}
+
+	@media (max-width: 600px) {
+		nav {
+			padding: 18px 20px;
+		}
+
+		.menu {
+			gap: 16px;
+		}
+
+		.menu a {
+			font-size: 0.9rem;
+		}
+	}
+</style>

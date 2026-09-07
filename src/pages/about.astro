@@ -1,0 +1,52 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<!doctype html>
+<html lang="ko">
+	<head>
+		<BaseHead
+			title="ABOUT | BONG"
+			description="BONG 독립 웹사이트 소개"
+		/>
+	</head>
+
+	<body>
+		<Header />
+
+		<main>
+			<h1>ABOUT</h1>
+
+			<p>
+				BONG은 특정 플랫폼에 종속되지 않고 직접 운영하는 독립 웹사이트입니다.
+			</p>
+
+			<p>
+				이 사이트에는 앞으로 다양한 글과 콘텐츠를 직접 축적해나갈 예정입니다.
+			</p>
+		</main>
+
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 90px 24px 120px;
+	}
+
+	h1 {
+		font-size: clamp(2.5rem, 6vw, 4rem);
+		margin-bottom: 40px;
+	}
+
+	p {
+		font-size: 1.2rem;
+		line-height: 1.9;
+		color: #555;
+	}
+</style>
