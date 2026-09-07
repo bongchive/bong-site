@@ -3,10 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>봉의 첫 사이트</title>
+  <title>BONG</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      color: #111;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 20px;
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .menu a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .hero {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #666;
+    }
+
+    .articles {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 20px 80px;
+    }
+
+    .articles h2 {
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #777;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>봉의 첫 독립 사이트</h1>
-  <p>사이트 개설 테스트 성공</p>
+
+<header>
+  <nav>
+    <div class="logo">BONG</div>
+
+    <div class="menu">
+      <a href="#">HOME</a>
+      <a href="#">ARTICLES</a>
+      <a href="#">ABOUT</a>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>생각을 기록하는 독립 사이트</h1>
+  <p>
+    플랫폼에 종속되지 않고 직접 운영하는 개인 웹사이트입니다.
+  </p>
+</section>
+
+<section class="articles">
+
+  <h2>최근 글</h2>
+
+  <div class="card">
+    <h3>첫 번째 글</h3>
+    <p>독립 사이트 구축을 시작했습니다.</p>
+  </div>
+
+  <div class="card">
+    <h3>두 번째 글</h3>
+    <p>앞으로 이곳에 콘텐츠가 쌓이게 됩니다.</p>
+  </div>
+
+  <div class="card">
+    <h3>세 번째 글</h3>
+    <p>사이트 구조와 디자인도 계속 발전시킬 예정입니다.</p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 BONG
+</footer>
+
 </body>
 </html>
