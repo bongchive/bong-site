@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>첫 번째 글 | BONG</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f6f8;
+      color: #111;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #ddd;
+      padding: 20px;
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .menu a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 70px auto;
+      padding: 0 20px;
+    }
+
+    .category {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 42px;
+      line-height: 1.3;
+      margin-bottom: 15px;
+    }
+
+    .date {
+      font-size: 14px;
+      color: #999;
+      margin-bottom: 45px;
+    }
+
+    article {
+      font-size: 18px;
+      line-height: 1.9;
+      color: #444;
+    }
+
+    article h2 {
+      margin-top: 50px;
+      font-size: 28px;
+      color: #111;
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 60px;
+      text-decoration: none;
+      color: #111;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">BONG</div>
+
+    <div class="menu">
+      <a href="../index.html">HOME</a>
+      <a href="../articles.html">ARTICLES</a>
+      <a href="../about.html">ABOUT</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div class="category">WEB</div>
+
+  <h1>독립 웹사이트를 직접 구축하기 시작했다</h1>
+
+  <div class="date">2026.09.07</div>
+
+  <article>
+
+    <p>
+      오늘부터 특정 플랫폼에 종속되지 않는 독립 웹사이트를 직접 구축하기 시작했다.
+    </p>
+
+    <p>
+      GitHub에 사이트 파일을 저장하고 Cloudflare Pages를 통해 인터넷에 배포하는 구조를 사용했다.
+    </p>
+
+    <h2>첫 번째로 배운 것</h2>
+
+    <p>
+      웹사이트는 처음 생각했던 것보다 단순했다.
+      HTML 파일을 만들고 인터넷 서버에 올리면 실제 웹페이지가 된다.
+    </p>
+
+    <h2>자동 배포</h2>
+
+    <p>
+      GitHub의 파일을 수정한 뒤 Commit하면 Cloudflare가 변경사항을 자동으로 감지해서
+      사이트를 다시 배포한다.
+    </p>
+
+    <h2>앞으로 할 일</h2>
+
+    <p>
+      사이트 구조를 조금씩 확장하고, 글 작성과 관리가 편한 형태로 발전시킬 예정이다.
+    </p>
+
+  </article>
+
+  <a class="back" href="../articles.html">
+    ← 글 목록으로 돌아가기
+  </a>
+
+</main>
+
+<footer>
+  © 2026 BONG
+</footer>
+
+</body>
+</html>
